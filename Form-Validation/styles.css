@@ -1,0 +1,63 @@
+/* Base styles for the entire document */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: linear-gradient(to bottom right,#60a3a5, #4dd7ec,#dd0ff5);
+
+}
+h2
+{
+    color: rgb(14, 13, 13);
+    text-shadow: 2px 2px 4px #f1eded;
+}
+/* Styles for the registration form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background:linear-gradient(120deg,#1eff6f,#097279,#e2f383);
+    border: 6px solid #151313;
+    border-radius: 2.5rem;
+}
+
+/* Styling for labels within the form */
+label {
+    font-weight: bold;
+}
+
+/* Styles for input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 8px 0;
+    border: 2px solid #debaba;
+    border-radius: 2rem;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size:1rem;
+}
+
+/* Styles for submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius:2rem;
+    cursor: pointer;
+    text-align:right;
+    border: 2px solid #121111;
+
+    
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}

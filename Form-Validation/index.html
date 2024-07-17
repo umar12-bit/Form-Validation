@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORM VALIDATION</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="/reg.ico">
+    <script src="https://kit.fontawesome.com/742666944d.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<form id="registrationForm" onsubmit="return validateForm()">
+    <h2 style="text-align: center;"><u>FORM VALIDATION<u></h2>
+<br>
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+    <br>
+    <span id="fullNameError" class="error"></span>
+    <br>
+    <label for="email">Email ID:</label>
+    <input type="email" id="email" name="email"  placeholder="exampleYour@domain.com" required>
+    <br>
+    <span id="emailError" class="error"></span>
+    <br>
+
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your 10 digits contact number" required>
+    <br>
+    <span id="phoneNumberError" class="error"></span>
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Set strong password" name="password" required>
+    <br>
+    <span id="passwordError" class="error"></span>
+    <br>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" placeholder="Confirmation your password" name="confirmPassword" required>
+    <br>
+    <span id="confirmPasswordError" class="error"></span>
+
+
+    <input type="submit" value="Submit">
+</form>
+
+<script src="script.js">
+</script>
+
+</body>
+</html>
